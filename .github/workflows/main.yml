@@ -1,3 +1,12 @@
-- name: LaTeX Render Action for Github
-  uses: AffineParameter/latex-action@a0.2.1
-
+name: Build LaTeX document
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: main.tex
