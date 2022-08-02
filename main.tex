@@ -55,7 +55,7 @@
 % custom underilne
 \usepackage{contour}
 \usepackage[normalem]{ulem}
-\renewcommand{\ULdepth}{1.8pt}
+\renewcommand{\ULdepth}{1.0pt}
 \contourlength{0.8pt}
 \newcommand{\myuline}[1]{%
   \uline{\phantom{#1}}%
@@ -78,10 +78,10 @@
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{0in}
+\addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-0.51in}
+\addtolength{\textheight}{0.7in}
 
 \urlstyle{same}
 
@@ -156,78 +156,46 @@
 \begin{center}
     \textbf{\Huge Rachael M. Harris} \\ \vspace{5pt}
     \small \faPhone* \texttt{412-245-7631} \hspace{1pt} $|$
-    \hspace{1pt} \faEnvelope \hspace{2pt} \texttt{harrisr@allegheny.edu} \hspace{1pt} $|$ 
-    \hspace{1pt} \faLinkedin \hspace{2pt} \texttt{rachael-harris19} \hspace{1pt} $|$
+    \hspace{1pt} \faEnvelope \hspace{2pt} \texttt{rharris2@andrew.cmu.edu} \hspace{1pt} $|$ 
+    \hspace{1pt} \faLinkedin \hspace{2pt} \texttt{rharris19} \hspace{1pt} $|$
     \hspace{1pt} \faGithub \hspace{2pt}\texttt{rachaelharris}
     \\ \vspace{-3pt}
 \end{center}
 
 %-----------EDUCATION-----------
-\section {EDUCATION}
+\section{EDUCATION}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Allegheny College}{August 2019 -- May 2023}
-      {Bachelor of Science in Computer Science}
-      {\color{SlateGrey}Overall GPA: 3.69 / 4.00}
-      	\resumeItemListStart
-      	\hfill
-      	\resumeItem {Minors: Political Science, Philosophy}
-      	\hfill
-      	{Major GPA: 3.85 / 4.00}
-    	%\resumeItem {{\color{VividPurple}\textbf{Coursework}}: Data Structures, Algorithms, Databases, Data Analysis, Computer Security}
-        \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%-----------EXPERIENCE-----------
-\section{EXPERIENCE}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {Prudential Financial}{June 2021 -- August 2021}
-      {Software Engineer \& Data Analytics Intern}{Newark, NJ}
-      \resumeItemListStart
-        \resumeItem{Wrote queries to analyze department data in five MongoDB collections to calculate vendor and package turnaround times, leading to a 33\% increase in the number of routine checks on the efficiency of benefits package delivery}
-        \resumeItem{Visualized the aggregated data using Tableau, allowing 25 managers to have access to daily, monthly, and yearly automated reviews}
-         \resumeItem{Collaborated with global engineers in Agile environment to create a dashboard for sentiment analysis on social media posts}
-         \resumeItem{Implemented sentiment analysis using Python and Amazon Web Services (Lambda, Comprehend, Kinesis Firehouse, DynamoDB, and Elastic Search), allowing public relations officers to detect changes in public opinion after large business decisions
-         }
-        %\resumeItem{\color{VividPurple}\textbf{[agile]}} Produced a product using Agile Methodologies, namely, a webinar for virtual Prudential employees on finding and refining a healthy work-life balance
-        %\resumeItem{\textbf{Highlights}:
-           % \href{https://www.youtube.com/watch?v=HhWUjp5pD0g}{\myuline {The Problem with Productivity Apps}}, \href{https://www.youtube.com/watch?v=ms4cWMsOITs}{\myuline {Obsidian App Review}},
-            %\href{https://www.youtube.com/watch?v=PkDbkyIR44w}{\myuline {Not-So-Minimal Desk Setup}}}
-      \resumeItemListEnd
-      
-          \resumeSubheading
-      {CX.i}{January 2021 -- April 2021}
-      {Data Science Intern}{Dallas, TX}
-      \resumeItemListStart
-        \resumeItem{Implemented in Java targeted recommendation algorithms that suggest products aligning with consumers' personal values and convenience scores, improving customer sentiment by 35\%}
-        \resumeItem{Developed backend infrastructure to connect data pipelines to point-of-sale APIs}
-        %\resumeItem{Spearheaded product development of a new lab workflow tool, leading to a 40\% increase in efficiency; \\ shadowed 10 core users, iterated on design docs, and implemented the solution with one engineer}
-
+      {Carnegie Mellon University, Heinz College}{May 2024}
+      {MS Information Security Policy and Management}{}
+    \resumeSubheading{Carnegie Mellon University, Heinz College}{July 2022}{(Certificate) Information Technology Summer Security Intensive (IT:SSI)}{}
+    \resumeItemListStart
+    \resumeItem{Courses taken: Cloud Security, Introduction to Information Security, Data Management and Security
+    }
     \resumeItemListEnd
-
     \resumeSubheading
-      {Mozilla @ Allegheny College}{September 2020 -- December 2020}
-      {Ethical Technical Leader}{Meadville, PA}
-      \resumeItemListStart
-        \resumeItem{Collaborated with Dr. Janyl Jumadinova under Mozilla\textquotesingle s Ethics in Computer Science initiative to create a sorting and labeling bot to determine how far false information spreads over social media at a critical time in communication}
-        \resumeItem{Trained an AI, using scikit-learn and a prepared data set, to detect disinformation and misinformation in tweets and to generate a validity and truthfulness score based on the amount of false information contained within the text}
-        \resumeItem{Displayed the scores using Naïve Bayes and Linear SVM 
-        }
-        \resumeItem{Leveraged Twitter\textquotesingle s API to extract data from tweets, namely text, username, verification status, and location, allowing users to search for tweets using hashtag, keyword, and username}
-
-        %\resumeItem{\textbf{Shipped a new feature to 2M+ users} to improve the search experience for movie series-related queries}
-        %\resumeItem{Built a back-end database service in Java and implemented a front-end UI to support future changes}
-      \resumeItemListEnd
-
+      {Allegheny College}{May 2023}
+      {BS Computer Science, Minors in Political Science and Philosophy}{GPA: 3.73 / 4.00}
   \resumeSubHeadingListEnd
+  
+  %
+%-----------PROGRAMMING SKILLS-----------
+\section{SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Languages} {: Python (w/ framework Django), Java, R, HTML, CSS, JS}\vspace{2pt} \\
+     \textbf{Tools}     {: SQL (Postgres, mySQL), Git, Version Control, Docker, TravisCI, Windows, MacOS} \\
+     \textbf{Certifications}     {: AWS Cloud Practitioner (in progress), Google Analytics (2020)}
+    }}
+ \end{itemize}
 
-      
-     %-----------PROJECTS-----------
 
-\section{PROJECTS}
-    \resumeSubHeadingListStart
+%-------------------------------------------
+
+
+ %-----------PUBLICATIONS-----------
+
+\section{Projects}
       %\resumeProjectHeading
           %{\textbf{Sentiment Analysis (Prudential Financial)}} {Aug. 2021 -- June 2021}
           %\resumeItemListStart
@@ -235,13 +203,14 @@
             %\resumeItem{Designed a \textbf{collaborative learning ecosystem} for students and parents with Trello, Miro, and Google Suite}
           %\resumeItemListEnd
           
-        \resumeProjectHeading
-          {\textbf{Technology Policy Node Map (BiPartisan Policy Center)}}{September 2021 -- October 2021}
+    \resumeSubHeadingListStart
+          \resumeSubheading{United States Strategic Command Nuclear Deterrence Brief}{June-July 2022}{Carnegie Mellon University, Heinz College}{Pittsburgh, PA}
+          
           \resumeItemListStart
-            \resumeItem{Implemented ProPublica\textquotesingle s API to scrape congress.gov for information on present legislators including state, party, and legislation that they have sponsored to filter into an automatically updated Neptune database for results caching}
-            \resumeItem{Utilized NetworkX to generate an interactive knowledge graph connecting officials to technology legislation that they have supported to present key areas of focus for 15 policy researchers
+            \resumeItem{Led a team of five students to conduct innovative research through Carnegie Mellon University and the United States Strategic Command. Efforts contributed to leading cutting-edge analysis on nuclear deterrence in cyberspace.}
+
+            \resumeItem{Analyzed, published, and presented the findings, specifically on cyber-attacks on NC3 systems and its impacts on strategic deterrence.
             }
-            %\resumeItem{Marketed the product and design process on {\href{https://www.youtube.com/watch?v=Ju32r7QJCzk}{\myuline {YouTube}}}; accumulated over \textbf{\$250 in sales} on {\href{https://gumroad.com/l/icons-by-harshibar}{\myuline {Gumroad}}}}
           \resumeItemListEnd
           
       %\resumeProjectHeading
@@ -254,16 +223,59 @@
     % \resumeSubHeadingListEnd
 
 
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{SKILLS}
- \begin{itemize}[leftmargin=0in, label={}]
-    \small{\item{
-     \textbf{Languages} {: Python, Java, R}\vspace{2pt} \\
-     \textbf{Tools}     {: SQL (PostgreSQL, mySQL), Git, Version Control, Docker, TravisCI}
-    }}
- \end{itemize}
 
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
 
-%-------------------------------------------
+    \resumeSubheading
+      {Prudential Financial}{June 2021 -- August 2021}
+      {Software Engineer \& Data Analytics Intern}{Newark, NJ}
+      \resumeItemListStart
+        \resumeItem{Wrote queries to analyze department data in five MongoDB collections to calculate vendor and package turnaround times, leading to a 33\% increase in the number of routine checks on the efficiency of benefits package delivery.}
+        \resumeItem{Visualized the aggregated data using Tableau, allowing 25 managers to have access to daily, monthly, and yearly automated reviews.}
+         \resumeItem{Implemented sentiment analysis using Python and Amazon Web Services (Lambda, Comprehend, Kinesis Firehouse, DynamoDB, and Elastic Search), allowing public relations officers to detect changes in public opinion after large business decisions.
+         }
+        %\resumeItem{\color{VividPurple}\textbf{[agile]}} Produced a product using Agile Methodologies, namely, a webinar for virtual Prudential employees on finding and refining a healthy work-life balance
+        %\resumeItem{\textbf{Highlights}:
+           % \href{https://www.youtube.com/watch?v=HhWUjp5pD0g}{\myuline {The Problem with Productivity Apps}}, \href{https://www.youtube.com/watch?v=ms4cWMsOITs}{\myuline {Obsidian App Review}},
+            %\href{https://www.youtube.com/watch?v=PkDbkyIR44w}{\myuline {Not-So-Minimal Desk Setup}}}
+      \resumeItemListEnd
+      
+    % \resumeSubheading
+    %     {CX.i}{January 2021 -- April 2021}
+    %     {Data Science Intern}{Dallas, TX}
+    %     \resumeItemListStart
+    %         \resumeItem{Implemented in Java targeted recommendation algorithms that suggest products aligning with consumers' personal values and convenience scores, improving customer sentiment by 35\%}
+    %         \resumeItem{Developed backend infrastructure to connect data pipelines to point-of-sale APIs}
+    %   \resumeItemListEnd
+    %     %\resumeItem{Spearheaded product development of a new lab workflow tool, leading to a 40\% increase in efficiency; \\ shadowed 10 core users, iterated on design docs, and implemented the solution with one engineer}
+    % %   {CX.i}{January 2021 -- April 2021}
+    % %   {Data Science Intern}{Dallas, TX}
+    % %   \resumeItemListStart
+    % %     \resumeItem{Implemented in Java targeted recommendation algorithms that suggest products aligning with consumers' personal values and convenience scores, improving customer sentiment by 35\%}
+    % %     \resumeItem{Developed backend infrastructure to connect data pipelines to point-of-sale APIs}
+    % %     %\resumeItem{Spearheaded product development of a new lab workflow tool, leading to a 40\% increase in efficiency; \\ shadowed 10 core users, iterated on design docs, and implemented the solution with one engineer}
+
+    % \resumeItemListEnd
+
+    \resumeSubheading
+      {Mozilla @ Allegheny College}{September 2020 -- December 2020}
+      {Ethical Technical Leader}{Meadville, PA}
+      \resumeItemListStart
+        \resumeItem{Collaborated with Dr. Janyl Jumadinova under Mozilla\textquotesingle s Ethics in Computer Science initiative to create a sorting and labeling bot to determine how far false information spreads over social media at a critical time in communication.}
+        \resumeItem{Trained an AI, using scikit-learn and a prepared data set, to detect disinformation and misinformation in tweets and to generate a validity and truthfulness score based on the amount of false information contained within the text.}
+        \resumeItem{Displayed the scores using Naïve Bayes and Linear SVM. 
+        }
+        \resumeItem{Leveraged Twitter\textquotesingle s API to extract data from tweets, namely text, username, verification status, and location, allowing users to search for tweets using hashtag, keyword, and username.}
+
+        %\resumeItem{\textbf{Shipped a new feature to 2M+ users} to improve the search experience for movie series-related queries}
+        %\resumeItem{Built a back-end database service in Java and implemented a front-end UI to support future changes}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+      
+    
+
 \end{document}
