@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.8.2)  2 AUG 2022 03:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.8.2)  2 AUG 2022 04:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -505,14 +505,14 @@ LaTeX Font Warning: Font shape `T1/qhv/m/it' undefined
 (Font)              using `T1/qhv/m/n' instead on input line 170.
 
 LaTeX Font Info:    Trying to load font information for TS1+qhv on input line 2
-66.
-LaTeX Font Info:    No file TS1qhv.fd. on input line 266.
+52.
+LaTeX Font Info:    No file TS1qhv.fd. on input line 252.
 
 LaTeX Font Warning: Font shape `TS1/qhv/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textquotesingle' on input line 266.
+(Font)              for symbol `textquotesingle' on input line 252.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 281.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 267.
 
 Package Fancyhdr Warning: \footskip is too small (0.0pt): 
 Make it at least 4.08003pt.
@@ -522,17 +522,17 @@ This may cause the page layout to be inconsistent, however.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 281.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 267.
  (_build/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 281.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 281.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 267.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 267.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AF1CC9CA18AC63D60A41188B8DFA0106;173.
+(rerunfilecheck)             Checksum: 0575512413AED394C87A9C80068E5843;177.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 281.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 267.
  ) 
 Here is how much of TeX's memory you used:
  11459 strings out of 483183
@@ -541,7 +541,7 @@ Here is how much of TeX's memory you used:
  26259 multiletter control sequences out of 15000+600000
  541439 words of font info for 50 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,11n,45p,559b,356s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,11n,45p,299b,356s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/runner/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.60
 0pk> </home/runner/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.
 600pk> </home/runner/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm109
@@ -556,9 +556,9 @@ ive/texmf-dist/fonts/type1/public/fira/FiraMono-Regular.pfb></usr/share/texlive
 r/share/texlive/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Sol
 id.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on _build/main.pdf (1 page, 103595 bytes).
+Output written on _build/main.pdf (1 page, 104965 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
+ 228 PDF objects out of 1000 (max. 8388607)
  67 compressed objects within 1 object stream
  6 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
