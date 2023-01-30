@@ -1,4 +1,4 @@
-%-------------------------
+-------------------------
 % Resume in Latex
 % Author : Harshibar
 % Based off of: https://github.com/jakeryang/resume
@@ -19,13 +19,23 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+% \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{xcolor}
 % only for pdflatex
 % \input{glyphtounicode}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
 
 % fontawesome
 \usepackage{fontawesome5}
@@ -63,11 +73,12 @@
 }
 
 
-% custom font: helvetica-style
-\usepackage{tgheros}
-\renewcommand*\familydefault{\sfdefault} 
-%% Only if the base font of the document is to be sans serif
-\usepackage[T1]{fontenc}
+% FONT CHANGING--UNCOMMENT ALL
+% % custom font: helvetica-style
+% \usepackage{tgheros}
+% \renewcommand*\familydefault{\sfdefault} 
+% %% Only if the base font of the document is to be sans serif
+% \usepackage[T1]{fontenc}
 
 
 \pagestyle{fancy}
@@ -75,13 +86,15 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4.08003pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-0.51in}
-\addtolength{\textheight}{0.7in}
+\usepackage[margin=0.5in]{geometry}
+% \addtolength{\oddsidemargin}{-0.5in}
+% \addtolength{\evensidemargin}{-0.5in}
+% \addtolength{\textwidth}{1in}
+% \addtolength{\topmargin}{-0.51in}
+% \addtolength{\textheight}{0.6in}
 
 \urlstyle{same}
 
@@ -102,7 +115,14 @@
 
 % only for pdflatex
 % Ensure that generate pdf is machine readable/ATS parsable
+
 % \pdfgentounicode=1
+
+% \input{glyphtounicode}
+
+% \pdfgentounicode=1
+
+
 
 %-------------------------
 % Custom commands
@@ -167,8 +187,10 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Carnegie Mellon University, Heinz College}{May 2024}
-      {MS Information Security Policy and Management}{}
-    \resumeSubheading{Carnegie Mellon University, Heinz College}{July 2022}{(Certificate) Information Technology Summer Security Intensive (IT:SSI)}{}
+      {MS Information Security Policy and Management}{QPA: 3.38 / 4.33}
+    % \resumeSubheading{Carnegie Mellon University, Heinz College}{July 2022}{IT Lab Summer Security Intensive Fellow}{GPA: 3.33 / 4.00}
+    % \resumeItem{Courses taken: Cloud Security, Introduction to Information Security, Data Management and Security
+    % }
     \resumeSubheading
       {Allegheny College}{May 2023}
       {BS Computer Science, Minors in Political Science and Philosophy}{GPA: 3.73 / 4.00}
@@ -179,8 +201,12 @@
 \section{SKILLS}
  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-     \textbf{Languages} {: Python, Java, R}\vspace{2pt} \\
-     \textbf{Tools}     {: SQL (PostgreSQL, mySQL), Git, Version Control, Docker, TravisCI, Google Data Analytics (Certified)}
+     \textbf{Languages} {: Python (w/ framework Django), Java, R, HTML, CSS, JS}\vspace{2pt} \\
+     \textbf{Tools}     {: SQL (Postgres, mySQL), Git, Version Control, Docker, TravisCI
+     % , Windows, MacOS
+     }
+    % \\
+    %  \textbf{Certifications}     {: AWS Cloud Practitioner (in progress), Google Analytics (2020)}
     }}
  \end{itemize}
 
@@ -188,85 +214,78 @@
 %-------------------------------------------
 
 
- %-----------PUBLICATIONS-----------
-
-% \section{Projects}
-%     \resumeSubHeadingListStart
-          
-%         \resumeProjectHeading
-%           {\textbf{PyPi Counter}}{February 2022}
-%           \resumeItemListStart
-%               \resumeItem{Developed a collaborative enhancement feature for Allegheny College's own GatorGrader to create new checks.}
-%                 \resumeItem{Implemented LibCST to "match" modules, expressions, and statements which allows end users to specify a given construct to be identified in the source code.}
-%                 \resumeItem{Utilized PyPi to deploy the tool and poetry to allow users to run the tool locally}
-%           \resumeItemListEnd
-          
-%      \resumeSubHeadingListEnd
-
-\section{Publications}
-          
-    \resumeSubHeadingListStart
-          \resumeSubheading{United States Strategic Command Nuclear Deterrence Report}{June-July 2022}{Carnegie Mellon University, Heinz College}{Pittsburgh, PA}
-          \resumeItemListStart
-            \resumeItem{Led a team of five students to conduct innovative research with the U.S. Strategic Command. Efforts contributed to cutting-edge analysis on U.S. deterrence from traditional nuclear warfare and cyberattacks}
-
-            \resumeItem{Analyzed and presented the findings, specifically: cyberattacks on NC3 systems and their affect on the system's security as it relates to strategic deterrence. Composed recommendations to lessen doubt of vulnerabilities.
-            }
-          \resumeItemListEnd
-     \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{EXPERIENCE}
   \resumeSubHeadingListStart
-    %   \resumeSubheading
-    %   {Allegheny College}{September 2021 -- May 2022}
-    %   {Undergraduate Teaching Assistant}{Meadville, PA}
-    %   \resumeItemListStart
-    %     \resumeItem{Courses assisted: Computational Expression, Discrete Structures, Data Analytics, and Database Systems.}
-    %     \resumeItem{Stimulated meaningful technology-related conversations between students and met with students during weekly office hours  to answer any pertinent questions.}
-    %     \resumeItem{Provided feedback and guidance to students while identifying areas of strengths and weakness.}
-    %   \resumeItemListEnd
-
+     \resumeSubheading
+      {Goldman Sachs}{June 2023 -- August 2023}
+      {Incoming Cybersecurity Analyst - Engineering Division}{New York City, NY}
+      % \resumeItemListStart
+      %   \resumeItem{Wrote queries to analyze department data in five MongoDB collections to calculate vendor and package turnaround times, leading to a 33\% increase in the number of routine checks on the efficiency of benefits package delivery.}
+      %   \resumeItem{Visualized the aggregated data with Tableau, allowing 25 managers to have access to recurring automated reviews.}
+      %    \resumeItem{Implemented sentiment analysis using Python and AWS (Lambda, Comprehend, Kinesis Firehouse, DynamoDB, and Elastic Search), allowing public relations officers to detect changes in public opinion after large business decisions.}
+      % \resumeItemListEnd
     \resumeSubheading
-      {Prudential Financial}{June 2021 -- August 2021}
-      {Software Engineer \& Data Analytics Intern}{Newark, NJ}
+  {Carnegie Mellon University}{June 2022 -- August 2022}
+      {Security Fellow}{Pittsburgh, PA}
       \resumeItemListStart
-        \resumeItem{Wrote queries to analyze department data in five MongoDB collections to calculate vendor and package turnaround times, leading to a 33\% increase in the number of routine checks on the efficiency of benefits package delivery.}
-         \resumeItem{Collaborated with global engineers in Agile environments to create a dashboard for text analysis of social media posts}
-         \resumeItem{Implemented sentiment analysis using Python and Amazon Web Services (Lambda, Comprehend, Kinesis Firehouse, DynamoDB, and Elastic Search), allowing public relations officers to detect changes in public opinion after large business decisions.
-         }
+        \resumeItem{Led a team of five students to conduct innovative research through the United States Strategic Command. Efforts contributed to leading cutting-edge analysis on U.S. deterrence from traditional nuclear warfare and cyberattacks.}
+        \resumeItem{Analyzed, presented, and published the findings, specifically on cyberattacks on Nuclear Command, Control, and Communication (NC3) systems and its effects on the reliability of the system regarding strategic deterrence. Composed recommendations to mitigate the introduction of doubt from our findings on NC3 vulnerabilities.}
+         \resumeItemListEnd
+    \resumeSubheading
+      {Bipartisan Policy Center}{September 2021 -- April 2022}
+      {Research and Technology Intern}{Remote (Washington, D.C.)}
+      \resumeItemListStart
+        \resumeItem{Published two research briefs; the first on the future of XR and the second relating to AI policies in the U.S. and E.U.  to address fairness, inclusion, regulation, and privacy. These briefs present key issues to policymakers on the hill.}
+        \resumeItem{Spearheaded an original research project to analyze the core differences between Artificial Intelligence Ethics Frameworks, Risk Assessments, and Impact Assessments by performing text-based analyses (such as sentiment and keyword analysis) which resulted in a partnering with AINow to further and publish the research.}
+        % \resumeItem{Displayed the scores using Naïve Bayes and Linear SVM. 
+        % }
+        \resumeItem{Developed innovative sentiment analysis and text-based analysis tools for use on international legislation, which is currently being funded by Google as an addition to congress.gov\textquotesingle s "Summary" feature.}
       \resumeItemListEnd
       
-  
-    
-    % \resumeSubheading
-    %   {Steel City Codes}{February 2021 -- September 2021}
-    %   {Instructor, Director of Summer Camps}{Pittsburgh, PA}
-    %   \resumeItemListStart
-    %     \resumeItem{Organized nation-wide summer camps, constructed a summer camp handbook, and updated curriculum to match skill levels of current students}
-    %     \resumeItem{Collaborated with other executive team members and camp directors to ensure success at each summer camp by instilling regular check-point meetings and regulatory practices}
-    %     \resumeItem{Fostered meaningful programming-related conversations between students}
-    %   \resumeItemListEnd
-
+    \resumeSubheading
+      {Prudential Financial}{June 2021 -- August 2021}
+      {Software Engineer \& Data Analytics Intern}{Remote (Newark, NJ)}
+      \resumeItemListStart
+        \resumeItem{Wrote queries to analyze department data in five MongoDB collections to calculate vendor and package turnaround times, leading to a 33\% increase in the number of routine checks on the efficiency of benefits package delivery.}
+        \resumeItem{Visualized the aggregated data with Tableau, allowing 25 managers to have access to recurring automated reviews.}
+         \resumeItem{Implemented sentiment analysis using Python and AWS (Lambda, Comprehend, Kinesis Firehouse, DynamoDB, and Elastic Search), allowing public relations officers to detect changes in public opinion after large business decisions.
+         }
+      \resumeItemListEnd
+% \newpage
     \resumeSubheading
       {Mozilla @ Allegheny College}{September 2020 -- December 2020}
       {Ethical Technical Leader}{Meadville, PA}
       \resumeItemListStart
         \resumeItem{Collaborated with Dr. Janyl Jumadinova under Mozilla\textquotesingle s Ethics in Computer Science initiative to create a sorting and labeling bot to determine how far false information spreads over social media at a critical time in communication.}
         \resumeItem{Trained an AI, using scikit-learn and a prepared data set, to detect disinformation and misinformation in tweets and to generate a validity and truthfulness score based on the amount of false information contained within the text.}
-        \resumeItem{Displayed the scores using Naïve Bayes and Linear SVM. 
-        }
+        % \resumeItem{Displayed the scores using Naïve Bayes and Linear SVM. 
+        % }
         \resumeItem{Leveraged Twitter\textquotesingle s API to extract data from tweets, namely text, username, verification status, and location, allowing users to search for tweets using hashtag, keyword, and username.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-\section{Awards}
+
+   %-----------PUBLICATIONS-----------
+
+\section{PUBLICATIONS}
+
+    \resumeItemListStart
+        \resumeItem{{\href{https://doi.org/10.1184/R1/21964826.v1}{{\textit{Impact of Cyberattacks on Functionality of NC3 Systems \& Strategic Deterrence,}}}} {Carnegie Mellon University}, {2022}}
+        \resumeItem{{\href{https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2022/08/AI-Policy-and-EU-Final-Paper.pdf}{{\textit{Artificial Intelligence Policy and the European Union,}}} {Bipartisan Policy Center, }}{2022}}
+        \resumeItem{{\href{https://bipartisanpolicy.org/blog/5g-explainer/}{{\textit{5G Explainer,}}}}{ BiPartisan Policy Center,} {2022}}
+        \resumeItem{{\href{https://bipartisanpolicy.org/report/thinking-ahead-about-xr/}{{\textit{Thinking Ahead About XR,}}}}{ BiPartisan Policy Center,} {2022}}
+    \resumeItemListEnd
+        
+  \section{Awards}
           
-    \resumeSubHeadingListStart
-          \resumeSubheading{Association for Computing Machinery Upsilon Pi Epsilon Scholarship}{2022}{}{}
-     \resumeSubHeadingListEnd  
-      
-    
+    \resumeItemListStart
+        \resumeItem{}{WiCyS (Women in Cybersecurity) \textbf{Student Scholarship}}, {2022}
+          \resumeItem{}{Association for Computing Machinery \textbf{Upsilon Pi Epsilon Scholarship}}, {2022}
+          \resumeItem{}{Distinguished Alden Scholar (\textbf{High Dean's List})}, {2021-2022}
+          \resumeItem{}{Alden Scholar (\textbf{Dean's List)}}, {2019-2020, 2020-2021}
+     \resumeItemListEnd
 
 \end{document}
 
